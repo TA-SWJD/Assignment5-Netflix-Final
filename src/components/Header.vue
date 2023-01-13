@@ -7,7 +7,7 @@ const navigate = (link) => {
 }
 
 const props = defineProps({
-    Login : Boolean,
+    Login: Boolean,
 });
 
 </script>
@@ -22,7 +22,7 @@ const props = defineProps({
                 <button @click="navigate" role="link">Login</button>
             </router-link>
             <router-link to="/Cart" custom v-slot="{ navigate }" v-if="Login">
-                <img src="../assets/cart.png"  @click="navigate" role="link" class="cart">
+                <img src="../assets/cart.png" @click="navigate" role="link" class="cart">
             </router-link>
             <router-link to="/" custom v-slot="{ navigate }" v-if="Login">
                 <button @click="navigate" role="link">Log-out</button>

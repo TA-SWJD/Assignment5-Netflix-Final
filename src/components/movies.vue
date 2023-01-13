@@ -24,9 +24,7 @@ const closeModal = () => {
 <template>
   <div class="container">
     <div v-for=" (movie, id) in movies" class="movies">
-      <p>
-        {{ movie.title }}
-      </p>
+      <p>{{ movie.title }} </p>
       <img v-if="movie.poster" :src="'https://image.tmdb.org/t/p/w500' + movie.poster" class="image"
         @click="openModal(movie)" />
     </div>
