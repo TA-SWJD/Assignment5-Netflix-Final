@@ -3,6 +3,7 @@ import Login from "../views/Login.vue";
 import Home from "../views/homeview.vue";
 import Movie from "../views/movie.vue";
 import Cart from "../views/cart.vue";
+import LoginHome from "../views/Loginhome.vue";
 
 const routes = [
   {
@@ -20,6 +21,10 @@ const routes = [
   {
     path: '/Cart',
     component: Cart,
+  },
+  {
+    path: '/LoginHome',
+    component: LoginHome,
   }
 ];
 

@@ -18,6 +18,7 @@ const store = useStore();
         </div>
     </div>
     <button class="p-button" @click="cart.clear()">Purchase</button>
+    <img src="../assets/Footer.avif" class="FooterIMG">
 
 </template>
 
@@ -42,7 +43,7 @@ const store = useStore();
 }
 
 .p-button {
-    position: absolute;
+    float: right;
     font-size: 25px;
     width: 200px;
     height: 60px;
@@ -82,5 +83,11 @@ img {
 .remove:hover {
     color: white;
     background-color: black;
+}
+
+.FooterIMG {
+    padding-top: 20px;
+    height: auto;
+    max-width: 100%;
 }
 </style>

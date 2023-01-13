@@ -21,14 +21,17 @@ const props = defineProps({
             <router-link to="/Login" custom v-slot="{ navigate }" v-if="!Login">
                 <button @click="navigate" role="link">Login</button>
             </router-link>
+            <router-link to="/Cart" custom v-slot="{ navigate }" v-if="Login">
+                <img src="../assets/cart.png"  @click="navigate" role="link" class="cart">
+            </router-link>
             <router-link to="/" custom v-slot="{ navigate }" v-if="Login">
-                <button @click="navigate" role="link">Home</button>
+                <button @click="navigate" role="link">Log-out</button>
             </router-link>
             <router-link to="/Movie" custom v-slot="{ navigate }" v-if="Login">
                 <button @click="navigate" role="link">Movies</button>
             </router-link>
-            <router-link to="/Cart" custom v-slot="{ navigate }" v-if="Login">
-                <img src="../assets/cart.png"  @click="navigate" role="link" class="cart">
+            <router-link to="/LoginHome" custom v-slot="{ navigate }" v-if="Login">
+                <button @click="navigate" role="link">Home</button>
             </router-link>
         </div>
         <img src="../assets/Bar.png" class="intro">
